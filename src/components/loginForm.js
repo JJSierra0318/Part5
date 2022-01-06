@@ -1,6 +1,7 @@
-import React from "react";
+import propTypes from 'prop-types'
+import React from 'react'
 
-const loginForm = ({
+const LoginForm = ({
   handleSubmit,
   handleUsernameChange,
   handlePasswordChange,
@@ -13,10 +14,10 @@ const loginForm = ({
 
       <form onSubmit={handleSubmit}>
         <div>
-          username <input value={username} onChange={handleUsernameChange}/>
+          username <input type='text' value={username} onChange={handleUsernameChange}/>
         </div>
         <div>
-          password <input value={password} onChange={handlePasswordChange}/>
+          password <input type='password' value={password} onChange={handlePasswordChange}/>
         </div>
         <div>
           <button>login</button>
@@ -26,5 +27,12 @@ const loginForm = ({
   )
 }
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {loginForm}
+LoginForm.propTypes = {
+  handleSubmit: propTypes.func.isRequired,
+  handleUsernameChange: propTypes.func.isRequired,
+  handlePasswordChange: propTypes.func.isRequired,
+  username: propTypes.string.isRequired,
+  password: propTypes.string.isRequired
+}
+
+export default LoginForm

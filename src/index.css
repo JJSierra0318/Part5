@@ -5,7 +5,7 @@
   font-weight: bold;
   margin-left: 40px;
   margin-bottom: 10px;
-  padding-top: 5px; 
+  padding: 5px; 
   width: 200px;
   height: 25px;
   border: 1px solid #79706E;
@@ -20,8 +20,28 @@
   font-weight: bold;
   margin-left: 40px;
   margin-bottom: 10px;
-  padding-top: 5px; 
+  padding: 5px; 
   border: 1px solid #79706E;
   border-radius: 5px;
   width: max-content;
+}
+
+.Blog {
+  padding: 5px;
+  margin: 10px;
+  border: 1.5px solid #79706E;
+  border-radius: 5px;
+  width: max-content;
+}
+
+.Blog button {
+  margin: 0 auto;
+  background-color: white;
+}
+
+.Like {
+  width: 35px;
+  height: 20px;
+  margin-right: 100px;
+  border-radius: 3px;
 }
