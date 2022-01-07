@@ -8,7 +8,7 @@ const Blog = ({ blog, username, handleLike, handleDelete }) => {
     <div className='Blog'>
       {blog.title} - {blog.author}
       <Togglabel buttonLabel='view'>
-        <div>
+        <div className='view'>
           {blog.url}<br/>
           likes: {blog.likes}  <button className='Like' onClick={handleLike}>like</button><br/>
           {blog.user.username}<br/>
