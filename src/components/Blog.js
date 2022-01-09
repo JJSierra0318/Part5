@@ -3,14 +3,13 @@ import React from 'react'
 import Togglabel from './Togglable'
 
 const Blog = ({ blog, username, handleLike, handleDelete }) => {
-
   return (
-    <div className='Blog'>
+    <div id='Blog' className='Blog'>
       {blog.title} - {blog.author}
       <Togglabel buttonLabel='view'>
         <div className='view'>
           {blog.url}<br/>
-          likes: {blog.likes}  <button className='Like' onClick={handleLike}>like</button><br/>
+          likes: {blog.likes}  <button id='Like' className='Like' onClick={handleLike}>like</button><br/>
           {blog.user.username}<br/>
           {blog.user.username === username
             ? <button onClick={handleDelete}>delete</button>

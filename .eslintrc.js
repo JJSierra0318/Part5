@@ -3,11 +3,12 @@ module.exports = {
   "env": {
       "browser": true,
       "es6": true,
-      "jest/globals": true 
+      "jest/globals": true ,
+      "cypress/globals": true
   },
   "extends": [ 
       "eslint:recommended",
-      "plugin:react/recommended"
+      "plugin:react/recommended",
   ],
   "parserOptions": {
       "ecmaFeatures": {
@@ -17,13 +18,12 @@ module.exports = {
       "sourceType": "module"
   },
   "plugins": [
-      "react", "jest"
+      "react", "jest", "cypress"
   ],
   "rules": {
-      "import/no-anonymous-default-export": off,
       "indent": [
           "error",
-          2  
+          2
       ],
       "linebreak-style": [
           "error",
